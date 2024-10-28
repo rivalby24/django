@@ -1,0 +1,12 @@
+{% extends 'index.html' %} 
+{% block title %}| Kontak {% endblock %}
+
+{% block body %}
+{% load static %}
+<section style="margin-bottom: 20px;">
+    <h2 style="text-align: center;">Kontak</h2>
+    <p style="display: inline-flex; align-items: center;"><img src="{% static 'img/envelope-solid.svg' %}" alt="Email" style="width: 20px; height: 20px; margin-right: 10px;"><a href="mailto:muhammadrivalby@gmail.com"> muhammadrivalby@gmail.com</a></p><br>
+    <p style="display: inline-flex; align-items: center;"><img src="{% static 'img/instagram-brands-solid.svg' %}" alt="Email" style="width: 20px; height: 20px; margin-right: 10px;"><a href="https://www.instagram.com/rivalby24_" target="_blank"> https://www.instagram.com/rivalby24_</a></p><br>
+    <p style="display: inline-flex; align-items: center;"><img src="{% static 'img/linkedin-brands-solid.svg' %}" alt="Email" style="width: 20px; height: 20px; margin-right: 10px;"><a href="https://www.linkedin.com/in/muhammad-rivalby-644122306/" target="_blank"> https://www.linkedin.com/in/muhammad-rivalby</a></p>
+</section>
+{% endblock %}
