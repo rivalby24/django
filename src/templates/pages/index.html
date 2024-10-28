@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata {% block title %}{% endblock %}</title>
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="{% static 'img/Foto Profil 2.jpg' %}" alt="Foto Profil" style="border-radius: 50%; width: 150px; height: 150px;">
+        <h1>Muhammad Rivalby</h1>
+        <p style="color: #fff;">Biodata</p>
+    </header>
+    <nav class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'informasi_pribadi' %}">Informasi Pribadi</a>
+        <a href="{% url 'pendidikan' %}">Pendidikan</a>
+        <a href="{% url 'keterampilan' %}">Keterampilan</a>
+        <a href="{% url 'kontak' %}">Kontak</a>
+    </nav>
+    <section>
+        <h2 style="text-align: center;">Tentang Saya</h2>
+        <p>Nama saya Muhammad Rivalby, saya adalah seorang Mahasiswa di Universitas Pendidikan Indonesia. Jurusan Pendidikan Ilmu Komputer.</p>
+    </section>
+    {% block body %}
+    {% endblock %} 
+    <footer>
+        <p style="text-align: center; color: #005C78;">&copy; 2024. Muhammad Rivalby</p>
+    </footer>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
